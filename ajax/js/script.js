@@ -1,5 +1,6 @@
 
-let url = 'http://localhost/Ajax_API_FETCH/backEnd/controller/produtoController.php'
+// let url = 'http://localhost/ajax/backEnd/controller/produtoController.php'
+let url = 'http://127.0.0.1:5500/ajax/lista_produto.json'
 
 
 // requisição HTTP do tipo GET
@@ -11,5 +12,5 @@ fetch(url)     // definindo a requisição
         return response.json()
     })
     .then(function(response){
-        console.log(response[0])
+        console.log(response)
     })
